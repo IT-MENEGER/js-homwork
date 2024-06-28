@@ -1,5 +1,5 @@
 // bu ko'd matn so'zlarini o'zgartirish va qancha so'z va harf borligini tekshirish uchun.
-
+// SAlom
 var text = prompt("Matn kiriting");
 var changetext = prompt ("Qaysi so'zni o'zgartirmoqchisiz");
 var newword= prompt("O'zgartirmoqchi bo'lgan so'zni kiriting");
