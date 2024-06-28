@@ -1,3 +1,5 @@
+// Bu ko'd emailni shifrlash uchun
+
 var email = prompt("Email kiriting");
 var emailslice = email.slice(3, -10) 
 console.log(emailslice);
