@@ -1,12 +1,26 @@
-// bu ko'd matn so'zlarini o'zgartirish va qancha so'z va harf borligini tekshirish uchun.
-// SAlom
-var text = prompt("Matn kiriting");
-var changetext = prompt ("Qaysi so'zni o'zgartirmoqchisiz");
-var newword= prompt("O'zgartirmoqchi bo'lgan so'zni kiriting");
-var changedtext = text.replace(changetext, newword);
-console.log(changedtext);
-var arr = changedtext.split(" ");
-changedtext = changedtext.replace(/\s+/g, '');
-console.log("Matndagi so'zlar soni: " + arr.length);
-console.log("Matndagi harflar soni: " + changedtext.length);
+var text = "Matn kiriting iltimos";
+// var text = prompt("Istalgancha matn kiriting");
+var letter = prompt(
+  "uchinchi so'zni birinchi harfni tekshirish uchun harfni kiriting"
+);
+var a = text.split(" ");
+console.log(a[2]);
+
+var reg = a[2].match(new RegExp(letter, "ig"));
+console.log(reg);
+
+console.log(a[2].startsWith(reg));
+// if (letter === reg) {
+//   var a = text.split(" ");
+//   // console.log(a[2]);
+//   console.log(reg);
+//   var slicea = a[2].slice(0, 1);
+//   var reg = slicea.match(new RegExp(letter, "ig"));
+//   console.log(slicea);
+//   console.log(a[2].startsWith(reg));
+// } else {
+//   console.log("Kiritgan harf uchinchi so'zning birinchi harfi emas!");
+// }
+
+
 
