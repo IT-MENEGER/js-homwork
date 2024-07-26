@@ -1,30 +1,35 @@
 "use strict"
 
-// let text = 'hello'
-// function sumOfIndexes(text) {
-//     let sum = 0;
+// first homework
 
-//     for (let i = 0; i < text.length; i++) {
-//       sum += i;
-//     }
+let text = prompt("Matn kiriting");
+function sumOfIndexes(text) {
+    let sum = 0;
+
+    for (let i = 0; i < text.length; i++) {
+      sum = sum + i;
+    }
+    return sum;
+  }
   
-//     return sum;
-//   }
-  
-//   let result = sumOfIndexes("hell");
-//   console.log(result); 
+  let result = sumOfIndexes(text);
+  console.log(result); 
+
+
+
+// Second homework
 
 
 let c = [];
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 100; i++) {
   c.push({ name: `someone${i+1}` });
 }
+
 
 let g = [];
 for (let i = 0; i < c.length; i++) {
   g.push(c[i].name);
 }
-
 console.log(g);
 
   
