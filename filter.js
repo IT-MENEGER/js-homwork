@@ -1,20 +1,20 @@
-function filter(arr,  callback) {
-    let res = [];
+let  filterfunction = function(arr,  callback) {
+    let result = [];
 
     for (let i = 0; i < arr.length; i++) {
         if(callback(arr[i],i, arr)){
-            res.push(arr[i]);
+            result.push(arr[i]);
         }
     }
-    return res;
+    return result;
 }
 
 
-let res = filter(
+let result = filterfunction(
     [22, 32, 25, 54, 4, 2],
     (number) => {
        return number < 5;   
     }
 )
 
-console.log(res);
+console.log(result);

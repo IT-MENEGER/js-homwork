@@ -1,4 +1,4 @@
-function myreduce(arr, cb, initialValue) {
+let myreduce =  function(arr, cb, initialValue) {
   let res = initialValue;
   for (let i = 0; i < arr.length; i++) {
     res = cb(res, arr[i], i, arr);
