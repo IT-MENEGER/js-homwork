@@ -1,45 +1,21 @@
-// // let text = prompt("key kiriting");
-// var text = "id";
+const object = [];
 
-// const myObject = {
-//   postId: 1,
-//   id: 1,
-//   name: "id labore ex et quam laborum",
-//   email: "Eliseo@gardner.biz",
-//   body: "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
-//   title:
-//     "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-//   description:
-//     "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
-//   url: "https://via.placeholder.com/600/92c952",
-//   thumbnailUrl: "https://via.placeholder.com/150/92c952",
-//   completed: false,
-// };
+for (let i = 0; i < 500; i++) {
+  const obj = {
+    js: 10 + i,
+    html: 11 + i,
+    css: 12 + i,
+  };
 
-// switch (key) {
-//     case id:{
+  object.push(obj);
+}
 
-//        break;
-//     }
+let sumofobject = object.map((obj) => obj.js + obj.html + obj.css);
 
-//     default:
-//         break;
-// }
 
-let input = document.getElementById("search");
-let wait = document.getElementById("wait");
-let result = document.getElementById("result");
+let result = 0;
 
-let arr = ["Eshshak","E Qovun", "Qovoq Kalla", ];
-let arr2 = ["termin", "atama", "so'z" ];
-
-var find = function() {
-    
-    wait.innerHTML = "Loading..."
-    result.innerHTML = "";
-    setTimeout(() => {
-        wait.innerHTML = "";
-        let randomIndex2 = Math.floor(Math.random() * arr2.length);
-        result.innerHTML = arr[Math.floor(Math.random() * arr.length)] + " bunday " + arr2[Math.floor(Math.random() * arr2.length)] + " yo'q!";
-    }, 2000);
-};
+for (let i = 0; i < object.length; i++) {
+  result += sumofobject[i];
+}
+console.log(result);
