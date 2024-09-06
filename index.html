@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script src="main.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="main">
+      <section class="photos">
+        <h1>Galareya</h1>
+        <div class="container">
+          <div class="img-cards" id="imgs">
+            <img
+              src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"
+              alt="bmw"
+            />
+            <img
+              src="https://cdn.pixabay.com/photo/2024/08/26/12/29/milky-way-8999255_640.jpg"
+              alt="nature"
+            />
+            <img
+              src="https://cdn.pixabay.com/photo/2024/08/31/20/00/clouds-9012234_640.jpg"
+              alt="sky"
+            />
+            <img
+              src="https://cdn.pixabay.com/photo/2021/09/07/07/11/game-console-6603120_640.jpg"
+              alt=""
+            />
+            <img
+              src="https://cdn.pixabay.com/photo/2024/09/01/22/32/ai-generated-9015122_640.jpg"
+              alt=""
+            />
+          </div>
+          <div class="btn-cards">
+            <button id="prev">Prev</button>
+            <button id="next" onclick="">Next</button>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <h1>Videolar</h1>
+        <div class="container">
+          <div class="videos" id="videos">
+            <video src="videos/177166-857004203_tiny.mp4" controls></video>
+            <video src="videos/22564-328615746_tiny.mp4" controls></video>
+            <video src="videos/5072-183299851_tiny.mp4" controls></video>
+            <video src="videos/84878-588566505_tiny.mp4" controls></video>
+            <video src="videos/99278-653943177_tiny.mp4" controls></video>
+            <video
+              src="videos/istockphoto-1616897621-640_adpp_is.mp4"
+              controls
+            ></video>
+          </div>
+          <div class="btn-cards">
+            <button id="">Prev</button>
+            <button id="" onclick="">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="slider.js"></script>
+  </body>
 </html>
